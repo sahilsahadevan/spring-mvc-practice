@@ -22,7 +22,11 @@ public class LoginController {
     //We can use the newer @GetMethod too, but using @RequestMapping for understanding purposes
     @RequestMapping(value = "/login", method = RequestMethod.GET)
     public String showLoginPage() {
-        //The Name of the Login page , the viewResolver will give this value a filePath and the .jsp extension
+        /*
+        * Note how @ResponseBody is NOT used here. In such cases, the expected response is a Url pattern for a JSP Page
+        *  Or redirect call (return "redirect:login") instead of final expected response.
+        * The Name of the Login page , the viewResolver will give this value a filePath and the .jsp extension
+        */
         return "Login";
     }
 
