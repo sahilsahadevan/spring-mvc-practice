@@ -6,7 +6,7 @@
         <title>Login</title>
     </head>
     <body>
-        <form action="/login" method="post">
+        <form action="/spring-mvc/login" method="post">
         <p><font color="red">${errorMessage}</font></p>
         Enter Your Name : <input type="text" id="first" name="first" placeholder="FirstName">
                           <input type="text" id="last" name="last" placeholder="LastName">
